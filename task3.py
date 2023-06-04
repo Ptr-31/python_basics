@@ -20,11 +20,12 @@ def translate(string):
         else:
             new_str += chr
     return new_str
-alphabet = {l: i+1 for i, l in enumerate(list(map(chr, range(ord('a'),ord('z')))))} #yes, i'm doing dict instead of using list, yes I'm strange))
+alphabet = {l: i+1 for i, l in enumerate(list(map(chr, range(ord('a'),ord('z')+1))))} #yes, i'm doing dict instead of using list, yes I'm strange))
 
 def main():
     string = "Hello, World!"
     print(translate(string))
+    print(alphabet)
 
 if __name__ == "__main__":
     main()
