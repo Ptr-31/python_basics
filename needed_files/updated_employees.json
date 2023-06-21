@@ -1,1 +1,1 @@
-{"employees": [{"name": "John Doe", "age": 30, "marketing": 50000}, {"name": "Jane Smith", "age": 25, "sales": 45000}, {"name": "Bob Johnson", "age": 35, "finance": 60000}]}
+{"employees": [{"name": "John Doe", "age": 30, "department": "Marketing", "salary": 50000}, {"name": "Jane Smith", "age": 25, "department": "Sales", "salary": 45000}, {"name": "Bob Johnson", "age": 35, "department": "Finance", "salary": 60000}]}

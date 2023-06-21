@@ -14,10 +14,9 @@ def edit_files(departments_salary: str, employees: str, updated_file: str):
         employees_json = json.loads(employees_json)
 
     for item in employees_json['employees']:
-        item['department'] = item['department'].lower()
-
-        item.update({item['department']: salary_json.get(item['department'], None)})
-        item.pop('department')
+        item['salary'] = None
+        item['salary'] = item['department'].lower()
+        item['salary'] = salary_json.get(item['salary'], None)
     with open(updated_file,  'w') as updated_file:
         json.dump(employees_json, updated_file)
 def main():
