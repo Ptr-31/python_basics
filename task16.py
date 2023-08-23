@@ -36,7 +36,7 @@ def main():
         "user3@example.net",
         "user4@example.com"
     ]
-    search(inp)
+    print(search(inp))
     # print(inp)
 if __name__ == '__main__':
     main()

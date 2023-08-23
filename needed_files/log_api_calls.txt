@@ -1,0 +1,8 @@
+2023-05-15 09:24:35,890 INFO  [worker-1] com.example.myapp.OrderProcessor - Processing order: 12345
+2023-05-15 09:24:36,255 DEBUG [worker-1] com.example.myapp.OrderProcessor - GET /api/users 200 300ms Checking inventory for order: 12345
+2023-05-15 09:24:36,500 INFO  [worker-1] com.example.myapp.InventoryService - Inventory check for order 12345: Found 3 items in stock
+2023-05-15 09:24:36,502 INFO  [worker-1] com.example.myapp.OrderProcessor - POST /api/posts 201 700ms Reserving 3 items for order: 12345
+2023-05-15 09:24:36,750 INFO  [worker-1] com.example.myapp.PaymentService - GET /api/comments 500 800ms Processing payment for order: 12345, amount: $150.00
+2023-05-15 09:24:37,032 INFO  [worker-1] com.example.myapp.ShippingService - PUT /api/users/1 404 100ms Shipping order: 12345 to address: 123 Main St, Anytown USA
+2023-05-15 09:24:37,500 INFO  [worker-1] com.example.myapp.OrderProcessor - GET /api/posts/1 200 600ms Order 12345 processed successfully
+2023-05-15 09:24:37,500 DEBUG [worker-1] com.example.myapp.OrderProcessor - DELETE /api/comments/1 204 200ms Processing next order...
