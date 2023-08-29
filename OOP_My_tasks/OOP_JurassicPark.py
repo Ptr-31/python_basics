@@ -32,45 +32,44 @@ class Dinasaur(ABC):
 
 class Carnivore(Dinasaur):
     def __init__(self, breed, name, weight, height):
-        self.breed = breed
-        self.name = name
-        self.weight = weight
-        self.height = height
+        self.__breed = breed
+        self.__name = name
+        self.__weight = weight
+        self.__height = height
 
     def get_personal_name(self):
-        return self.name
+        return self.__name
 
     def get_breed(self):
-        return self.breed
+        return self.__breed
 
     def get_height(self):
-        return self.height
+        return self.__height
 
     def get_weight(self):
-        return self.weight
+        return self.__weight
 
     def get_diet(self):
         return 'Плотоядный'
 
 class Herbivore(Dinasaur):
     def __init__(self, breed, name, weight, height):
-        self.breed = breed
-        self.name = name
-        self.weight = weight
-        self.height = height
+        self.__breed = breed
+        self.__name = name
+        self.__weight = weight
+        self.__height = height
 
     def get_personal_name(self):
-        return self.name
+        return self.__name
 
     def get_breed(self):
-        return self.breed
+        return self.__breed
 
     def get_height(self):
-        return self.height
+        return self.__height
 
     def get_weight(self):
-        return self.weight
-
+        return self.__weight
     def get_diet(self):
         return 'Травоядный'
 
